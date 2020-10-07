@@ -141,7 +141,7 @@ public class Test {
         public static void main(String[] args) throws Exception{
                 Test test = new Test();
                 test.get_file(args[0]);
-                while (test.index1<test.str.length()){
+                while (test.index1<test.str.length() && test.err_num==0){
                         test.lexical_analysis();
                 }
         }
