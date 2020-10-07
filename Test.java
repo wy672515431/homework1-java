@@ -35,8 +35,8 @@ public class Test {
         public void getChar(){
                 ch = str.charAt(index1++);
         }
-        public void filter_blank_ch(){
-                while(ch == ' '|| ch == '\n' || ch =='\t' || ch == '\r'){
+        public void filter_blank_ch()throws Exception{
+                while((ch == ' '|| ch == '\n' || ch =='\t' || ch == '\r') && index1<str.length()){
                         getChar();
                 }
         }
@@ -64,7 +64,7 @@ public class Test {
                 err_num=1;
                 System.out.println("Unknown");
         }
-        public void lexical_analysis(){
+        public void lexical_analysis()throws Exception{
                 clearToken();
                 getChar();
                 filter_blank_ch();
