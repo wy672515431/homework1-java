@@ -121,7 +121,7 @@ public class Test {
                 }
                 else if(ch == '+') System.out.println("Plus");
                 else if(ch == '*') System.out.println("Star");
-                else if(ch == ',') System.out.println("Colon");
+                else if(ch == ',') System.out.println("Comma");
                 else if(ch == '(') System.out.println("LParenthesis");
                 else if(ch == ')') System.out.println("RParenthesis");
                 else error();
